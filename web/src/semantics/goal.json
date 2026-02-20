@@ -36,12 +36,36 @@
                                         "family": "Particle",
                                         "word": "sa"
                                     }
-                                ]
+                                ],
+                                "exposed": [
+                                    {
+                                        "variable": "x",
+                                        "slot": "E"
+                                    },
+                                    {
+                                        "variable": "y",
+                                        "slot": "A"
+                                    }
+                                ],
+                                "chaining": {
+                                    "variable": "y",
+                                    "slot": "A"
+                                }
                             },
                             "next": {
                                 "verb": {
                                     "family": "Root",
-                                    "word": "meon"
+                                    "word": "meon",
+                                    "exposed": [
+                                        {
+                                            "variable": "y",
+                                            "slot": "E"
+                                        }
+                                    ],
+                                    "chaining": {
+                                        "variable": "y",
+                                        "slot": "E"
+                                    }
                                 }
                             }
                         }
