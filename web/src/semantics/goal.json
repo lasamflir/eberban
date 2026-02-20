@@ -1,0 +1,53 @@
+{
+    "paragraphs": [
+        {
+            "sentences": [
+                {
+                    "kind": "A Sentence",
+                    "starter": {
+                        "family": "A",
+                        "word": "a"
+                    },
+                    "definition": {
+                        "verb": {
+                            "family": "Root",
+                            "word": "mian",
+                            "exposed": [
+                                {
+                                    "variable": "x",
+                                    "slot": "E"
+                                }
+                            ],
+                            "chaining": {
+                                "variable": "x",
+                                "slot": "E"
+                            }
+                        },
+                        "next": {
+                            "verb": {
+                                "family": "Compound",
+                                "prefix": "e",
+                                "content": [
+                                    {
+                                        "family": "Root",
+                                        "word": "tian"
+                                    },
+                                    {
+                                        "family": "Particle",
+                                        "word": "sa"
+                                    }
+                                ]
+                            },
+                            "next": {
+                                "verb": {
+                                    "family": "Root",
+                                    "word": "meon"
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
