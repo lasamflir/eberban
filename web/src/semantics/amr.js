@@ -101,5 +101,9 @@ function add_variables(result) {
 }
 
 function add_variables_to_sentence(sentence) {
-    console.log("Adding variables to sentence: " + JSON.stringify(sentence));
+    process_verb_chains({},sentence.definition);
+}
+
+function process_verb_chains(chaining, node) {
+    console.log("Processing node: " + JSON.stringify(node));
 }
