@@ -88,7 +88,18 @@ function get_default_compound_behaviour(content) {
 
 // main recursive function
 
-function add_variables(node) {
-    node.fluff = "stuff";
-    return node;
+function add_variables(result) {
+    // for now AMR only works on the sentence level, so loop over paragraphs
+    // at the top level of the JSON is a paragraph list
+    for (let i = 0; i < result.paragraphs.length; i++) {
+        const paragraph = result.paragraphs[i];
+        for (let j = 0; j < paragraph.sentences.length; j++) {
+            const sentence = paragraph.sentences[j];
+            add_variables_to_sentence(sentence);
+        }
+    }
+}
+
+function add_variables_to_sentence(sentence) {
+    console.log("Adding variables to sentence: " + JSON.stringify(sentence));
 }
